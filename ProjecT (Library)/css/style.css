@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap');
+
+.home-icon {
+  height: 41px;
+  width: 48px;
+  border-radius: 31px;
+}
+
+#preloader {
+  background: #fff url(/Gif/Preloder.gif) no-repeat center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  display: none;
+}
+
+.dynamic {
+  font-family: var(--font1);
+}
+
+/* Color variables */
+:root {
+  --white-color: #fff;
+  --bg-color: #fff;
+  --gray-color: #ccc;
+  --font1: 'Raleway', sans-serif;
+}
+
+/* Changing background color */
+body {
+  background: var(--bg-color) !important;
+}
+
+/* Changing link color */
+.nav-item .nav-link {
+  color: var(--white-color);
+}
+
+/* .nav-link:hover{
+  text-decoration: underline;
+  font-weight: bold;
+} */
+
+/* Hero section background image */
+.hero {
+  height: 100vh;
+  background-image: url("../images/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#skills i {
+  height: 100px;
+  width: 100px;
+}
+
+#portfolio img {
+  height: 300px;
+  object-fit: cover;
+}
+
+#about .img,
+#about img,
+.hire-text h2 {
+  position: relative;
+}
+
+/* Timeline background line */
+#about .img::before {
+  content: "";
+  left: 50%;
+  width: 4px;
+  position: absolute;
+  height: calc(100% + 140px);
+  background: var(--gray-color);
+}
+
+#about img,
+#about .hire-text h2 {
+  width: 140px;
+}
+
+#about .hire-text h2 {
+  height: 140px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+}
+
+footer .social-icons a {
+  width: 30px;
+  height: 30px;
+}
+
+#cv img {
+  width: 230px;
+}
+
+/* Contact section background image */
+#contact {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../images/contact-bg.jpeg");
+}
+
+@media screen and (max-width: 990px) {
+  #skills .card {
+    width: calc(100% / 2 - 10px) !important;
+  }
+}
+
+@media screen and (max-width: 668px) {
+
+  #skills .card,
+  #portfolio .card-wrapper {
+    width: 100% !important;
+  }
+}
+
+.form {
+  background-image: url(/images/form.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 31em;
+  width: 100%;
+  background-color: black;
+  display: none;
+}
+
+.form input {
+  height: 50px;
+  width: 50%;
+  border: none;
+  border-radius: 10px;
+  text-align: end;
+  margin-left: 20%;
+}
+
+textarea {
+  height: 50px;
+  margin-top: 13px;
+  width: 50%;
+  border: none;
+  border-radius: 10px;
+  text-align: end;
+}
+
+.submit {
+  height: 49px;
+  width: 8%;
+  margin-left: 17%;
+  border: none;
+  border-radius: 10px;
+  margin-left: 42%;
+}
+
+.submit:hover {
+  border: 1px solid black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.close {
+  font-size: 24px;
+  border: black;
+  border-radius: 15px;
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.close:hover {
+  cursor: pointer;
+  color: black;
+}
